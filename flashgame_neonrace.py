@@ -1,6 +1,8 @@
-import gym
-import universe
+# not work. My laptop amd and radeon. Sorry, CUDA not work's
+
 import random
+import universe
+import gym
 
 env = gym.make('flashgames.NeonRace-v0')
 env.configure(remotes=1)
@@ -9,9 +11,9 @@ observation_n = env.reset()
 left = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', True),
         ('KeyEvent', 'ArrowRight', False)]
 right = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', False),
-        ('KeyEvent', 'ArrowRight', True)]
+         ('KeyEvent', 'ArrowRight', True)]
 forward = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', False),
-        ('KeyEvent', 'ArrowRight', False), ('KeyEvent', 'n', True)]
+           ('KeyEvent', 'ArrowRight', False), ('KeyEvent', 'n', True)]
 
 turn = 0
 rewards = []
